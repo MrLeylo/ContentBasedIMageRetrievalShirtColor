@@ -6,7 +6,7 @@
 * Pip 3 installed
 * Run:
 ```
-pip3 install -r rquirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## Preparations
