@@ -126,8 +126,6 @@ samples_positioned_query = [spp for iispp, spp in enumerate(samples_positioned_q
 
 no_regions_query = []
 
-predicted_labels = kmeans.predict(samples_positioned_query)
-
 matching_pool = []
 mcolors_pool = []
 matching_indices = []
@@ -147,6 +145,7 @@ if not os.path.exists(imgs_path_result):
 elif os.listdir(imgs_path_result):
     print('Directory not empty, adding _new suffix')
     imgs_path_result += '_new'
+    os.mkdir(imgs_path_result)
 
 for mind in matching_indices:
     copyfile(os.path.join(imgs_path_pool, validimgfiles[mind]),
