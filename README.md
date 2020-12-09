@@ -3,7 +3,7 @@
 ## Requirements
 
 * Python 3
-* Pip 3 installed
+* Pip 3 installed (tested on version 20.2.4)
 * Run:
 ```
 pip3 install -r requirements.txt
