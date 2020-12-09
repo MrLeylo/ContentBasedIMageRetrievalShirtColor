@@ -110,11 +110,11 @@ samples_positioned_pool = [(hsvs[1] * math.cos(hsvs[0] * 2 * math.pi), hsvs[1] *
 hsv_samples_pool = [hss for iihss, hss in enumerate(hsv_samples_pool) if iihss not in no_regions_pool]
 samples_positioned_pool = [spp for iispp, spp in enumerate(samples_positioned_pool) if iispp not in no_regions_pool]
 
-validimgfiles = [vimg for iipif, vimg in enumerate(os.listdir(img_paths_pool)) if iipif not in no_regions_pool]
+validimgfiles = [vimg for iipif, vimg in enumerate(os.listdir(imgs_path_pool)) if iipif not in no_regions_pool]
 
 no_regions_pool = []
 
-img_paths_query = os.path.join('shirt_dataset', 'labeled')
+imgs_path_query = os.path.join('shirt_dataset', 'labeled')
 
 hsv_samples_query, no_regions_query = get_samples_in_feature_space(imgs_path_query)
 
